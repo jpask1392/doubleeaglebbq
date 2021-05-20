@@ -1,0 +1,120 @@
+/* line 4, stdin */
+
+.login #login_error,
+.login .message {
+  border-color: #69813b;
+}
+
+/* line 9, stdin */
+
+#login h1 a {
+  background-image: url(/wp-content/themes/double-eagle/dist/images/logo-white.png);
+  width: 160px;
+  background-size: contain;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
+
+/* line 17, stdin */
+
+body.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(/wp-content/themes/double-eagle/dist/images/login-background.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  font-weight: 500;
+}
+
+/* line 25, stdin */
+
+body.login #nav,
+body.login #backtoblog {
+  text-align: center;
+}
+
+/* line 29, stdin */
+
+body.login #nav a,
+body.login #backtoblog a {
+  color: white;
+}
+
+/* line 32, stdin */
+
+body.login #nav a:hover,
+body.login #backtoblog a:hover {
+  color: #69813b;
+}
+
+/* line 39, stdin */
+
+#login {
+  min-width: 24rem;
+  padding: 0;
+}
+
+/* line 44, stdin */
+
+#loginform {
+  padding: 40px;
+}
+
+/* line 47, stdin */
+
+#loginform input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #69813b;
+  font-size: 1rem;
+}
+
+/* line 54, stdin */
+
+.login form .input,
+.login input[type=text] {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* line 60, stdin */
+
+.wp-core-ui .button,
+.wp-core-ui .button-primary {
+  border-radius: unset;
+}
+
+/* line 65, stdin */
+
+.wp-core-ui .button-primary {
+  background: #69813b;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 74, stdin */
+
+.wp-core-ui .button-primary:hover {
+  background: #69813b;
+  border: 1px solid #69813b;
+}
+
+/* line 80, stdin */
+
+#wp-submit {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+}
+
+
+/*# sourceMappingURL=login.css.map*/

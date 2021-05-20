@@ -13,7 +13,6 @@ wp-config.php
 !/wp-content/themes/double-eagle
 
 /wp-content/themes/double-eagle/.cache-loader
-/wp-content/themes/double-eagle/dist
 /wp-content/themes/double-eagle/node_modules
 /wp-content/themes/double-eagle/npm-debug.log
 /wp-content/themes/double-eagle/yarn-error.log

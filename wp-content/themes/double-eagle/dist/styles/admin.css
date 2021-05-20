@@ -1,0 +1,39 @@
+/* line 1, stdin */
+
+.acf-image-select label input {
+  display: none;
+}
+
+/* line 6, stdin */
+
+.acf-image-select ul.acf-radio-list li,
+.acf-image-select ul.acf-checkbox-list li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+/* line 13, stdin */
+
+.acf-image-select label p {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 19, stdin */
+
+.acf-image-select label img {
+  width: 150px;
+  opacity: 0.2;
+}
+
+/* line 25, stdin */
+
+.acf-image-select label.selected img {
+  opacity: 1;
+}
+
+
+/*# sourceMappingURL=admin.css.map*/
