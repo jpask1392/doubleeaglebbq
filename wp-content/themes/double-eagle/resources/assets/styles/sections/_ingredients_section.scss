@@ -1,0 +1,37 @@
+.ingredients-section {
+  position: relative;
+  padding: 50px 0;
+
+  .rip-top {
+    //
+  }
+
+  .rip-bottom {
+    //
+  }
+
+  .ingredients-wrapper {
+    ul {
+      column-count: 2;
+      line-height: 2;
+    }
+  }
+
+  .crop-aspect {
+    position: relative;
+    padding-top: 70%;
+    height: 0;
+
+    .crop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      -webkit-clip-path: url(#myClip);
+      clip-path: url(#myClip);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

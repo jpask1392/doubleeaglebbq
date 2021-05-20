@@ -1,0 +1,93 @@
+/** Search form */
+.search-form {
+  @extend .form-inline;
+}
+
+.search-form label {
+  @extend .form-group;
+
+  font-weight: normal;
+}
+
+.search-form .search-field {
+  @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+form.hf-form.hf-form-565 {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+
+  input,
+  textarea {
+    width: 100%;
+    background-color: theme-color("secondary");
+    border: 1px theme-color("primary") solid;
+    padding: 10px;
+  }
+
+  textarea[name=MESSAGE] {
+    margin-top: 30px;
+    min-height: 250px;
+  }
+
+  input[type=submit] {
+    @extend .btn;
+
+    width: auto;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  input[name=NAME] {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/**
+* Register Form
+*/
+form#register,
+form#login {
+  input {
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .form-row.password {
+    flex-direction: column;
+
+    .woocommerce-password-strength {
+      margin-top: 10px;
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+
+  p.status {
+    display: none;
+
+    img {
+      width: 100px;
+      display: block;
+      margin: auto;
+    }
+  }
+}

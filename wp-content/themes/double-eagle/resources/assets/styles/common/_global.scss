@@ -1,0 +1,88 @@
+html {
+  font-size: 0.8rem;
+  overflow-x: initial;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (max-height: 700px) {
+    font-size: 0.8rem;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrap {
+  margin-top: -100px; // needs to match the nav bar height
+  flex: 1 0 auto;
+}
+
+/**
+Text
+*/
+p {
+  line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  + ul,
+  + p {
+    margin-top: 30px;
+  }
+}
+
+h2,
+h3 {
+  color: theme-color-level("primary", 4s);
+}
+
+h4,
+h5,
+h6 {
+  color: theme-color("primary");
+}
+
+p + button {
+  margin-top: 20px;
+}
+
+/**
+* Layout
+*/
+section.page-header + div,
+section.page-header + section {
+  padding-top: 50px;
+}
+
+.bg-secondary {
+  background-color: theme-color("secondary");
+}
+
+.split-section .container-fluid {
+  max-width: 1714px;
+}
+
+ol {
+  padding-left: 1rem;
+
+  li {
+    padding-left: 1rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
+}

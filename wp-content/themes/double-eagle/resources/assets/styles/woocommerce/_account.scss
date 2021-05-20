@@ -1,0 +1,55 @@
+.woocommerce-MyAccount-navigation {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 2;
+
+    li a {
+      color: black;
+    }
+  }
+}
+
+.woocommerce-orders-table.woocommerce-MyAccount-orders.shop_table.shop_table_responsive.my_account_orders.account-orders-table {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.woocommerce-MyAccount-content {
+  .woocommerce-Address {
+    padding: 0;
+
+    header.woocommerce-Address-title.title {
+      margin-bottom: 20px;
+
+      > h3 {
+        @extend h5;
+
+        width: 100%;
+      }
+
+      a.edit {
+        float: left;
+      }
+    }
+  }
+}
+
+#customer_login {
+  @extend .container;
+
+  form.woocommerce-form.woocommerce-form-login.login {
+    & .form-row:nth-child(3) {
+      border: none !important;
+      align-items: center;
+    }
+
+    .woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+      order: 2;
+      width: 30px;
+    }
+
+    input[name=rememberme] {
+      height: auto !important;
+    }
+  }
+}

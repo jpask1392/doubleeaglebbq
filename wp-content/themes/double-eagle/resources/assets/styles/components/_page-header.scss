@@ -1,0 +1,26 @@
+.page-header {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .content--header {
+    min-height: 400px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  // &::after {
+  //   content: "";
+  //   clip-path: url(#hero-clip);
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   height: 0;
+  //   padding-bottom: 2.25%; // calculated by SVG height and width
+  //   width: 100%;
+  //   background-color: inherit;
+  // }
+}

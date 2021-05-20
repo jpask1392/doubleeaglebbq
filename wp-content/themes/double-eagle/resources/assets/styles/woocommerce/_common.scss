@@ -1,0 +1,33 @@
+/**
+* Class to control reponsiveness of woocommerce store columns
+*/
+@media (max-width: 767px) {
+  .woocommerce ul.products[class*=columns-] li.type-product {
+    width: 100%;
+  }
+}
+
+/**
+* Fix - woocommerce uses same classes as bootstrap
+* these classes will clear out bootstrap column class
+* from woocommerce pages
+*/
+body.woocommerce-checkout,
+body.woocommerce-account {
+  .col2-set .col-1,
+  .col2-set .col-1,
+  .col2-set .col-2,
+  .col2-set .col-2 {
+    flex: none;
+    max-width: 100%;
+  }
+}
+
+.woocommerce img,
+.woocommerce-page img {
+  max-width: initial !important;
+}
+
+.woocommerce-notices-wrapper {
+  @extend .container;
+}

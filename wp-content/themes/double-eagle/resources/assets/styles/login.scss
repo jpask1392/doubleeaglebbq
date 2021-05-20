@@ -1,0 +1,84 @@
+$primary: #69813b;
+$secondary: #f1eeec;
+
+.login #login_error,
+.login .message {
+  border-color: $primary;
+}
+
+#login h1 a {
+  background-image: url("../images/logo-white.png");
+  width: 160px;
+  background-size: contain;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
+
+body.login {
+  display: flex;
+  background-image: url("../images/login-background.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  font-weight: 500;
+
+  #nav,
+  #backtoblog {
+    text-align: center;
+
+    a {
+      color: white;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+#login {
+  min-width: 24rem;
+  padding: 0;
+}
+
+#loginform {
+  padding: 40px;
+
+  input {
+    box-shadow: none;
+    border-color: $primary;
+    font-size: 1rem;
+  }
+}
+
+.login form .input,
+.login input[type=text] {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-primary {
+  border-radius: unset;
+}
+
+.wp-core-ui .button-primary {
+  background: $primary;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+  transition: all 0.2s;
+
+  &:hover {
+    background: $primary;
+    border: 1px solid $primary;
+  }
+}
+
+#wp-submit {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+}

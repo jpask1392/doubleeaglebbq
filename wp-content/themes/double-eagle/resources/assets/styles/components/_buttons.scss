@@ -1,0 +1,21 @@
+button,
+.btn,
+.button {
+  padding: 10px 30px !important;
+  margin: 20px 0;
+  background-color: theme-color("primary") !important;
+  color: white !important;
+  border: transparent 2px solid !important;
+  transition: all 0.3s;
+  font-weight: 500;
+  border-radius: 100px !important;
+}
+
+button:hover,
+.btn:hover,
+.button:hover {
+  border: theme-color("primary") 2px solid !important;
+  color: theme-color("primary") !important;
+  background-color: transparent !important;
+  box-sizing: content-box !important;
+}

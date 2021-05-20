@@ -1,0 +1,20 @@
+table {
+  border: 1px solid theme-color(primary);
+
+  tr:nth-child(2n+2) {
+    background-color: theme-color(secondary);
+  }
+
+  th {
+    font-family: $font-family-serif;
+  }
+
+  td,
+  th {
+    padding: 1rem;
+
+    &:not(:last-of-type) {
+      border-right: 1px solid theme-color(primary);
+    }
+  }
+}

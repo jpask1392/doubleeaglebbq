@@ -1,0 +1,234 @@
+form.checkout.woocommerce-checkout {
+  .woocommerce-billing-fields,
+  .woocommerce-shipping-fields {
+    .active-field {
+      border-color: theme-color("primary") !important;
+
+      label {
+        color: theme-color("primary") !important;
+      }
+    }
+
+    .form-row {
+      display: flex;
+      border: 1px solid lightgrey;
+      padding: 10px;
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+      width: 100%;
+
+      &.form-row-first,
+      &.form-row-last {
+        @include media-breakpoint-up(md) {
+          width: 49%;
+
+          &#billing_state_field {
+            // margin: 0;
+          }
+
+          &#billing_phone_field {
+            width: 40%;
+            clear: both;
+          }
+
+          &#billing_email_field {
+            width: 58%;
+          }
+        }
+      }
+
+      label {
+        white-space: nowrap;
+        margin: 0;
+        width: 35%;
+      }
+
+      .woocommerce-input-wrapper {
+        flex-grow: 1;
+        margin-left: 10px;
+
+        input {
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+
+    p#billing_country_field,
+    p#shipping_country_field {
+      position: relative;
+
+      label {
+        position: absolute;
+        top: 0;
+        font-size: 0.6em;
+      }
+
+      .woocommerce-input-wrapper {
+        margin: 0;
+
+        .select2-selection--single {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+#ship-to-different-address {
+  @extend .h6;
+
+  display: flex;
+  justify-content: flex-end;
+
+  label.checkbox {
+    display: flex;
+    align-items: center;
+
+    input {
+      order: 1;
+      margin-left: 10px;
+    }
+  }
+}
+
+.woocommerce-checkout-review-order {
+  background-color: theme-color("secondary");
+
+  table.shop_table.woocommerce-checkout-review-order-table {
+    border: none;
+    table-layout: fixed;
+
+    .product-title-wrapper {
+      .sub-cat-title {
+        font-family: $font-family-serif;
+        text-transform: uppercase;
+        color: theme-color-level("primary", 5);
+      }
+    }
+
+    .product-quantity {
+      margin-bottom: 5px;
+      font-family: $font-family-serif;
+    }
+
+    .cart_item {
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+
+      #checkout_thumbnail {
+        height: 100px;
+        margin-right: 20px;
+
+        > img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+
+    td.product-name {
+      border: none;
+    }
+
+    tr.coupon_checkout {
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+
+      td {
+        border: none;
+      }
+    }
+
+    form.checkout_coupon {
+      display: flex;
+      border: none;
+      padding: 0;
+      margin: 15px 0;
+
+      p.form-row {
+        padding: 0;
+        border: none;
+        width: auto !important;
+        margin-bottom: 0;
+
+        input.button {
+          height: auto !important;
+        }
+      }
+
+      p.form-row-first {
+        flex-grow: 1;
+        margin-right: 20px;
+        margin-bottom: 0 !important;
+      }
+
+      p.form-row-last {
+        margin-bottom: 0 !important;
+      }
+
+      input[name=coupon_code] {
+        padding: 10px;
+      }
+    }
+
+    tfoot {
+      tr.cart-discount,
+      tr.cart-subtotal,
+      tr.woocommerce-shipping-totals,
+      tr.order-total {
+        td {
+          text-align: right;
+          border: none;
+        }
+      }
+
+      tr.cart-subtotal,
+      tr.woocommerce-shipping-totals {
+        td {
+          @extend h5;
+        }
+      }
+
+      tr.order-total {
+        td {
+          @extend h3;
+        }
+      }
+    }
+  }
+}
+
+button[name=update_cart] {
+  display: none !important;
+}
+
+.woocommerce table.shop_table {
+  border-collapse: collapse !important;
+  border-bottom: none !important;
+  margin: 0;
+
+  tfoot th {
+    border-top: none;
+  }
+}
+
+p.returning-customer {
+  margin-top: 0;
+}
+
+#payment.woocommerce-checkout-payment {
+  .form-row {
+    flex-wrap: nowrap;
+    display: block;
+
+    button[name=woocommerce_checkout_place_order] {
+      float: left !important;
+    }
+  }
+}
+
+.woocommerce-order-received .woocommerce {
+  @extend .container;
+}

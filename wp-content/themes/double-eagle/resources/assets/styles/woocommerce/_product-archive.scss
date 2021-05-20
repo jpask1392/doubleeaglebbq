@@ -1,0 +1,119 @@
+form.woocommerce-ordering {
+  select[name=orderby] {
+    appearance: none;
+    background-color: theme-color("secondary");
+    padding: 10px;
+    border: none;
+    position: relative;
+
+    ::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 30px;
+      border-left: 1px white solid;
+    }
+  }
+}
+
+/* the container must be positioned relative: */
+.custom-select {
+  position: relative;
+  padding: 0;
+  width: auto;
+  float: right;
+  border: none;
+}
+
+.custom-select select {
+  display: none; /* hide original SELECT element: */
+}
+
+.select-selected {
+  position: relative;
+  background-color: theme-color("secondary");
+  padding-right: 50px !important;
+  width: 300px;
+
+  &::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 2px;
+    right: 40px;
+    background-color: white;
+  }
+}
+
+/* style the arrow inside the select element: */
+.select-selected::after {
+  content: url('data:image/svg+xml;utf8, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="darkgrey" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>');
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  display: block;
+  padding: 12px;
+  transition: transform 0.3s;
+}
+
+/* point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active::after {
+  // border-left: white 3px solid;
+  height: 100%;
+  transform: rotateX(180deg);
+  transform-origin: center;
+}
+
+/* style the items (options), including the selected item: */
+.select-items a,
+.select-selected {
+  color: black;
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+}
+
+/* style items (options): */
+.select-items {
+  position: absolute;
+  background-color: white;
+  border: 1px theme-color("primary") solid;
+  margin-top: 10px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items a:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.star-rating {
+  margin: auto !important;
+  margin-bottom: 10px;
+}
+
+.woocommerce ul.products li.product {
+  .price {
+    @extend .h5;
+  }
+}
+
+.woocommerce .products ul,
+.woocommerce ul.products {
+  margin-top: 100px;
+}

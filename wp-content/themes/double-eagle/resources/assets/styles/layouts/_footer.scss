@@ -1,0 +1,205 @@
+footer {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30px;
+  flex-shrink: 0;
+
+  .footer-background-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 0 50px;
+    padding-bottom: 60px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-up(md) {
+      flex-wrap: nowrap;
+    }
+
+    & a {
+      color: theme-color("primary") !important;
+    }
+
+    > img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      min-width: 100%;
+      // max-width: 100vw;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 30px;
+    }
+
+    ul.footer-navigation {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      list-style-type: none;
+
+      @include media-breakpoint-up(md) {
+        flex-wrap: nowrap;
+        width: auto;
+      }
+
+      li.nav-item {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+          white-space: pre;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .copyright-container {
+    color: theme-color("primary");
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    @include media-breakpoint-up(md) {
+      // flex-grow: 1;
+      // text-align: center;
+    }
+  }
+
+  .footer-socials-wrapper {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-around;
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+      margin-top: 0;
+    }
+
+    .golf-tee-wrapper {
+      position: relative;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @include media-breakpoint-up(lg) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .golf-ball {
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+        @include media-breakpoint-up(lg) {
+          height: 60px;
+        }
+      }
+
+      &:hover .golf-ball {
+        // top: 30%;
+      }
+
+      .golf-tee {
+        position: absolute;
+        z-index: -2;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        margin-top: 25px;
+
+        @include media-breakpoint-up(lg) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+#techyscouts-logo {
+  display: inline-block;
+  fill: theme-color("primary");
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
+
+.techyscouts-credit-link:hover #techyscouts-logo-heart,
+.techyscouts-credit-link:focus #techyscouts-logo-heart {
+  animation: ts-heart-beat 2s infinite ease-in-out 0.6s;
+}
+
+.techyscouts-credit-link:hover #techyscouts-logo-text,
+.techyscouts-credit-link:focus #techyscouts-logo-text {
+  animation: ts-draw-logo 2s forwards;
+}
+
+.techyscouts-credit-link:hover #techyscouts-logo-line-1,
+.techyscouts-credit-link:hover #techyscouts-logo-line-2,
+.techyscouts-credit-link:focus #techyscouts-logo-line-1,
+.techyscouts-credit-link:focus #techyscouts-logo-line-2 {
+  animation: ts-swoop-down 0.5s forwards ease-out;
+}
+
+.techyscouts-credit-link:hover #techyscouts-logo-line-2,
+.techyscouts-credit-link:focus #techyscouts-logo-line-2 {
+  animation-name: ts-swoop-up;
+}
+
+@keyframes ts-heart-beat {
+  5% {
+    transform: scale(1.1);
+    fill: #c7315f;
+  }
+
+  10% {
+    transform: scale(0.9);
+  }
+
+  15% {
+    transform: scale(1.2);
+    fill: #c7315f;
+  }
+
+  40% {
+    transform: scale(1);
+    stroke-width: 0;
+  }
+}
+
+@keyframes ts-draw-logo {
+  0% {
+    stroke-dasharray: 2600;
+    stroke-dashoffset: 2600;
+  }
+
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes ts-swoop-down {
+  0% { transform: translateY(-100%) rotate(10deg); }
+}
+
+@keyframes ts-swoop-up {
+  0% { transform: translateY(100%) rotate(-10deg); }
+}
