@@ -138,6 +138,8 @@ form.checkout.woocommerce-checkout {
 
       td {
         border: none;
+        padding-left: 0;
+        padding-right: 0;
       }
     }
 
@@ -162,10 +164,13 @@ form.checkout.woocommerce-checkout {
         flex-grow: 1;
         margin-right: 20px;
         margin-bottom: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
       }
 
       p.form-row-last {
         margin-bottom: 0 !important;
+        padding-right: 0 !important;
       }
 
       input[name=coupon_code] {
@@ -177,7 +182,8 @@ form.checkout.woocommerce-checkout {
       tr.cart-discount,
       tr.cart-subtotal,
       tr.woocommerce-shipping-totals,
-      tr.order-total {
+      tr.order-total,
+      tr.tax-total {
         td {
           text-align: right;
           border: none;
@@ -185,10 +191,15 @@ form.checkout.woocommerce-checkout {
       }
 
       tr.cart-subtotal,
-      tr.woocommerce-shipping-totals {
+      tr.woocommerce-shipping-totals,
+      tr.tax-total {
         td {
           @extend h5;
         }
+      }
+
+      tr.tax-total {
+        border-top: 1px solid grey;
       }
 
       tr.order-total {
@@ -231,4 +242,16 @@ p.returning-customer {
 
 .woocommerce-order-received .woocommerce {
   @extend .container;
+}
+
+tr.woocommerce-shipping-totals {
+  vertical-align: baseline;
+
+  ul.woocommerce-shipping-methods {
+    font-family: $font-family-sans-serif;
+    color: black;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
 }
