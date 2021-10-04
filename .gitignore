@@ -1,22 +1,36 @@
-/backups
-/wp-admin
-/.vscode
-/wp-includes
+# Generated dot files
+.DS_Store
+.gitignore
 .htaccess
+
+# Core files and config 
+/web/*
+!/web/wp-content/
+/vendor
+
+# Ignore uploads file 
+web/wp-content/uploads
+
+# Don’t ignore plugins dir, but ignore everything inside
+# Don’t ignore required plugins
+!web/wp-content/plugins/
+web/wp-content/plugins/*
+!web/wp-content/plugins/advanced-custom-fields-pro
+
+# Don’t ignore themes dir, but ignore everything inside
+# Don’t ignore custom theme
+!web/wp-content/themes/
+web/wp-content/themes/*
+!web/wp-content/themes/double-eagle
+
+
+# Ignore files/directories within custom theme
+web/wp-content/themes/double-eagle/.cache-loader
+web/wp-content/themes/double-eagle/node_modules
+
+# misc
+/exports/
+/audits/
+/.vscode/
 wp-config.php
-
-/wp-content/plugins
-/wp-content/upgrade
-/wp-content/uploads
-
-/wp-content/themes/*
-!/wp-content/themes/double-eagle
-
-/wp-content/themes/double-eagle/.cache-loader
-/wp-content/themes/double-eagle/node_modules
-/wp-content/themes/double-eagle/npm-debug.log
-/wp-content/themes/double-eagle/yarn-error.log
-/wp-content/themes/double-eagle/vendor
-/wp-content/themes/double-eagle/resources/assets/config-local.json
-
-*.sql
+/dbbackups/
