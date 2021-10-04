@@ -188,6 +188,8 @@ form.checkout.woocommerce-checkout {
       tr.woocommerce-shipping-totals {
         td {
           @extend h5;
+
+          background: red;
         }
       }
 
