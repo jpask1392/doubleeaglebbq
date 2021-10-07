@@ -9,12 +9,12 @@
   "images/logo-black.png": "images/logo-black_32558a1f.png",
   "images/logo-white.png": "images/logo-white_9d574674.png",
   "images/product-background.png": "images/product-background_9f85844b.png",
-  "styles/admin.css": "styles/admin_acab3cf2.css",
-  "scripts/admin.js": "scripts/admin_acab3cf2.js",
-  "scripts/ajax_main.js": "scripts/ajax_main_acab3cf2.js",
-  "scripts/customizer.js": "scripts/customizer_acab3cf2.js",
-  "styles/login.css": "styles/login_acab3cf2.css",
-  "scripts/login.js": "scripts/login_acab3cf2.js",
-  "styles/main.css": "styles/main_acab3cf2.css",
-  "scripts/main.js": "scripts/main_acab3cf2.js"
+  "styles/admin.css": "styles/admin_9c5fe5ab.css",
+  "scripts/admin.js": "scripts/admin_9c5fe5ab.js",
+  "scripts/ajax_main.js": "scripts/ajax_main_9c5fe5ab.js",
+  "scripts/customizer.js": "scripts/customizer_9c5fe5ab.js",
+  "styles/login.css": "styles/login_9c5fe5ab.css",
+  "scripts/login.js": "scripts/login_9c5fe5ab.js",
+  "styles/main.css": "styles/main_9c5fe5ab.css",
+  "scripts/main.js": "scripts/main_9c5fe5ab.js"
 }
