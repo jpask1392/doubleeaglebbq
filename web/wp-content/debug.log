@@ -1,0 +1,140 @@
+[04-Oct-2021 18:34:32 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:34:40 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:40:54 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:40:55 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:41:01 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/themes/double-eagle/app/woocommerce.php on line 95
+[04-Oct-2021 18:41:02 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/themes/double-eagle/app/woocommerce.php on line 95
+[04-Oct-2021 18:41:03 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/themes/double-eagle/app/woocommerce.php on line 95
+[04-Oct-2021 18:41:04 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/themes/double-eagle/app/woocommerce.php on line 95
+[04-Oct-2021 18:41:05 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:41:06 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:41:08 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:41:09 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:41:30 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:41:31 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:42:57 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:42:59 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:50:18 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:50:19 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:51:21 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[04-Oct-2021 18:51:22 UTC] PHP Notice:  Trying to access array offset on value of type bool in /app/web/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 499
+[07-Oct-2021 13:42:51 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_transient_jetpack_idc_allowed' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, Automattic\Jetpack\Config->on_plugins_loaded, Automattic\Jetpack\Config->ensure_feature, Automattic\Jetpack\Config->enable_sync, Automattic\Jetpack\Sync\Main::configure, Automattic\Jetpack\Sync\Actions::sync_allowed, Automattic\Jetpack\Status->is_staging_site, Jetpack::validate_sync_error_idc_option, get_transient, delete_option
+[07-Oct-2021 13:43:46 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 /app/web/wp-config.php(86): require_once('/app/web/wp-set...')
+#5 /app/web/wp-load.php(37): require_once('/app/web/wp-con...')
+#6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
+#7 /app/web/index.php(17): require('/app/web/wp-blo...')
+#8 {main}
+[07-Oct-2021 13:43:48 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 /app/web/wp-config.php(86): require_once('/app/web/wp-set...')
+#5 /app/web/wp-load.php(37): require_once('/app/web/wp-con...')
+#6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
+#7 /app/web/index.php(17): require('/app/web/wp-blo...')
+#8 {main}
+[07-Oct-2021 13:45:26 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 /app/web/wp-config.php(86): require_once('/app/web/wp-set...')
+#5 /app/web/wp-load.php(37): require_once('/app/web/wp-con...')
+#6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
+#7 /app/web/index.php(17): require('/app/web/wp-blo...')
+#8 {main}
+[07-Oct-2021 23:21:57 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 /app/web/wp-config.php(86): require_once('/app/web/wp-set...')
+#5 /app/web/wp-load.php(37): require_once('/app/web/wp-con...')
+#6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
+#7 /app/web/index.php(17): require('/app/web/wp-blo...')
+#8 {main}
+[07-Oct-2021 23:21:57 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 /app/web/wp-config.php(86): require_once('/app/web/wp-set...')
+#5 /app/web/wp-load.php(37): require_once('/app/web/wp-con...')
+#6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
+#7 /app/web/index.php(17): require('/app/web/wp-blo...')
+#8 {main}
+[07-Oct-2021 23:21:58 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 /app/web/wp-config.php(86): require_once('/app/web/wp-set...')
+#5 /app/web/wp-load.php(37): require_once('/app/web/wp-con...')
+#6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
+#7 /app/web/index.php(17): require('/app/web/wp-blo...')
+#8 {main}
+[07-Oct-2021 23:21:59 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 /app/web/wp-config.php(86): require_once('/app/web/wp-set...')
+#5 /app/web/wp-load.php(37): require_once('/app/web/wp-con...')
+#6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
+#7 /app/web/index.php(17): require('/app/web/wp-blo...')
+#8 {main}
+[07-Oct-2021 23:22:10 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1271): require('/app/web/wp-set...')
+#5 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1192): WP_CLI\Runner->load_wordpress()
+#6 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(23): WP_CLI\Runner->start()
+#7 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(77): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#8 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(27): WP_CLI\bootstrap()
+#9 phar:///usr/local/bin/wp/php/boot-phar.php(11): include('phar:///usr/loc...')
+#10 /usr/local/bin/wp(4): include('phar:///usr/loc...')
+#11 {main}
+[07-Oct-2021 23:22:11 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1271): require('/app/web/wp-set...')
+#5 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1192): WP_CLI\Runner->load_wordpress()
+#6 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(23): WP_CLI\Runner->start()
+#7 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(77): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#8 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(27): WP_CLI\bootstrap()
+#9 phar:///usr/local/bin/wp/php/boot-phar.php(11): include('phar:///usr/loc...')
+#10 /usr/local/bin/wp(4): include('phar:///usr/loc...')
+#11 {main}
+[07-Oct-2021 23:22:15 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1271): require('/app/web/wp-set...')
+#5 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1192): WP_CLI\Runner->load_wordpress()
+#6 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(23): WP_CLI\Runner->start()
+#7 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(77): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#8 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(27): WP_CLI\bootstrap()
+#9 phar:///usr/local/bin/wp/php/boot-phar.php(11): include('phar:///usr/loc...')
+#10 /usr/local/bin/wp(4): include('phar:///usr/loc...')
+#11 {main}
