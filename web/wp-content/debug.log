@@ -391,3 +391,25 @@ Stack trace:
 #6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
 #7 /app/web/index.php(17): require('/app/web/wp-blo...')
 #8 {main}
+[07-Oct-2021 23:50:01 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 /app/web/wp-config.php(86): require_once('/app/web/wp-set...')
+#5 /app/web/wp-load.php(37): require_once('/app/web/wp-con...')
+#6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
+#7 /app/web/index.php(17): require('/app/web/wp-blo...')
+#8 {main}
+[07-Oct-2021 23:50:05 UTC] RedisException: Connection refused in /app/web/wp-content/object-cache.php:430
+Stack trace:
+#0 /app/web/wp-content/object-cache.php(430): Redis->connect('127.0.0.1', 6379)
+#1 /app/web/wp-content/object-cache.php(175): WP_Object_Cache->__construct(true)
+#2 /app/web/wp-includes/load.php(579): wp_cache_init()
+#3 /app/web/wp-settings.php(123): wp_start_object_cache()
+#4 /app/web/wp-config.php(86): require_once('/app/web/wp-set...')
+#5 /app/web/wp-load.php(37): require_once('/app/web/wp-con...')
+#6 /app/web/wp-blog-header.php(13): require_once('/app/web/wp-loa...')
+#7 /app/web/index.php(17): require('/app/web/wp-blo...')
+#8 {main}

@@ -22,7 +22,7 @@
       )) }}
       
       <div class="copyright-container">
-        <?= date('Y'); ?> Double Eagle BBQ, LLC | 
+        <?= date('Y'); ?> © Double Eagle BBQ, LLC | 
         <a href="https://techyscouts.com/" class="techyscouts-credit-link">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 0 3700 552" id="techyscouts-logo" aria-labelledby="techyscouts-logo-title" role="img">
             <title id="techyscouts-logo-title">Made with love by TechyScouts</title>
