@@ -1,3 +1,6 @@
 path: web
 @staging:
   ssh: doubleeaglebbq@sfo2.techyscouts.dev/sites/doubleeaglebbq.sfo2.techyscouts.dev/files
+@live:
+  ssh: doubleeaglebbq@strange.techyscouts.dev/sites/doubleeaglebbq.com/files
+  

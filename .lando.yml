@@ -12,7 +12,7 @@ config:
   via: nginx
   database: mariadb
   cache: redis
-  xdebug: true
+  xdebug: false
   webroot: web
 services:
   appserver:
@@ -71,14 +71,14 @@ tooling:
         passthrough: true
         alias:
           - e
-        default: staging
+        default: live
         describe: Sync from specified environment
   reset-db:
     service: appserver
     description: Resets database to latest data from production
     cmd:
       - wp db reset --yes
-      - wp @staging db export - | wp db import -
+      - wp @live db export - | wp db import -
       - wp plugin activate rewrite-testing query-monitor
   reset-deps:
     service: appserver
@@ -107,7 +107,7 @@ events:
     - database: sleep 5 # give db time to boot
     - appserver: >-
         if ! $(wp core is-installed); then
-          wp @staging db export - | wp db import -;
+          wp @live db export - | wp db import -;
         fi;
         wp plugin activate rewrite-testing query-monitor;
         wp spinupwp update-object-cache-dropin;
